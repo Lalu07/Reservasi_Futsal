@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "708667921547",
+    "project_id": "reservasi-futsal",
+    "storage_bucket": "reservasi-futsal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708667921547:android:12e6461278d971aa88f08e",
+        "android_client_info": {
+          "package_name": "firdaus.rizkika.reservasi_futsal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708667921547-22838fq443g84mjcqv8chm4375r6jk39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuQZECj8EpWmMi7_D5kp4f9k_wbmuk8uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708667921547-22838fq443g84mjcqv8chm4375r6jk39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
