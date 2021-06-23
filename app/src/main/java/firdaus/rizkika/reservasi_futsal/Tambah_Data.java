@@ -1,7 +1,7 @@
 package firdaus.rizkika.reservasi_futsal;
 
 import androidx.appcompat.app.AppCompatActivity;
-import firdaus.rizkika.reservasi_futsal.Adapter.SimpanData;
+import firdaus.rizkika.reservasi_futsal.database.SimpanData;
 
 import android.os.Bundle;
 import android.view.View;

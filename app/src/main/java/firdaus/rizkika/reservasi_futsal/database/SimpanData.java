@@ -1,16 +1,28 @@
-package firdaus.rizkika.reservasi_futsal.Adapter;
+package firdaus.rizkika.reservasi_futsal.database;
 
 public class SimpanData {
+    String IdFutsal;
     String NamaPemesan;
     String TanggalPemesanan;
     String PaketWaktu;
     String HargaPaket;
+
+    public SimpanData() {
+    }
 
     public SimpanData(String namaPemesan, String tanggalPemesanan, String paketWaktu, String hargaPaket) {
         NamaPemesan = namaPemesan;
         TanggalPemesanan = tanggalPemesanan;
         PaketWaktu = paketWaktu;
         HargaPaket = hargaPaket;
+    }
+
+    public String getIdFutsal() {
+        return IdFutsal;
+    }
+
+    public void setIdFutsal(String idFutsal) {
+        IdFutsal = idFutsal;
     }
 
     public String getNamaPemesan() {
