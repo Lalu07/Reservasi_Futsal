@@ -29,4 +29,10 @@
     <string name="nama">Nama</string>
     <string name="notel">No Telepon</string>
     <string name="HINT">Pass dan Email Disini</string>
+
+    <array name="paketwaktu">
+        <item>10:00 - 12:00</item>
+        <item>12:00 - 15:00</item>
+        <item>16:00 - 18:00</item>
+    </array>
 </resources>

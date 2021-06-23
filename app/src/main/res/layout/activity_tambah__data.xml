@@ -7,23 +7,9 @@
     tools:context=".Tambah_Data">
 
     <EditText
-        android:id="@+id/edJumlah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Jumlah Pembayaran"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edWaktu"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edWaktu"
-        app:layout_constraintTop_toBottomOf="@+id/edWaktu"
-        app:layout_constraintVertical_bias="0.119" />
-
-    <EditText
         android:id="@+id/edNama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
         android:ems="10"
         android:hint="Nama Pemesan"
         android:inputType="textPersonName"
@@ -36,8 +22,8 @@
 
     <EditText
         android:id="@+id/edTanggal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
         android:ems="10"
         android:hint="Tanggal Pemesanan"
         android:inputType="textPersonName"
@@ -47,32 +33,6 @@
         app:layout_constraintStart_toStartOf="@+id/edNama"
         app:layout_constraintTop_toBottomOf="@+id/edNama"
         app:layout_constraintVertical_bias="0.067" />
-
-    <EditText
-        android:id="@+id/edWaktu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Waktu Pemesanan"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edTanggal"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edTanggal"
-        app:layout_constraintTop_toBottomOf="@+id/edTanggal"
-        app:layout_constraintVertical_bias="0.08" />
-
-    <Button
-        android:id="@+id/bttnSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Simpan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edJumlah"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/edJumlah"
-        app:layout_constraintTop_toBottomOf="@+id/edJumlah"
-        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
         android:id="@+id/textView7"
@@ -84,5 +44,43 @@
         app:layout_constraintEnd_toEndOf="@+id/edNama"
         app:layout_constraintStart_toStartOf="@+id/edNama"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinn1"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
+        android:entries="@array/paketwaktu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edTanggal"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/edTanggal"
+        app:layout_constraintTop_toBottomOf="@+id/edTanggal"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/edJumlah"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="Jumlah Pembayaran"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spinn1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinn1"
+        app:layout_constraintTop_toBottomOf="@+id/spinn1"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <Button
+        android:id="@+id/bttnSubmit"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:text="Simpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edJumlah"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/edJumlah"
+        app:layout_constraintTop_toBottomOf="@+id/edJumlah"
+        app:layout_constraintVertical_bias="0.173" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
