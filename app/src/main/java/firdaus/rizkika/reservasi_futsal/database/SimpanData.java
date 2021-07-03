@@ -1,6 +1,10 @@
 package firdaus.rizkika.reservasi_futsal.database;
 
-public class SimpanData {
+import com.google.firebase.database.IgnoreExtraProperties;
+
+import java.io.Serializable;
+
+public class SimpanData implements Serializable {
     String IdFutsal;
     String NamaPemesan;
     String TanggalPemesanan;

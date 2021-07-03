@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Reservasi_Futsal</string>
+    <string name="app_name">Futsal</string>
     <string name="daftarB">Belum Daftar?</string>
     <string name="Newnama">Masukkan Username</string>
     <string name="NewPass">Masukkan Password</string>
@@ -29,6 +29,8 @@
     <string name="nama">Nama</string>
     <string name="notel">No Telepon</string>
     <string name="HINT">Pass dan Email Disini</string>
+    <string name="Edit">Edit</string>
+    <string name="Hapus">Hapus</string>
 
     <array name="paketwaktu">
         <item>10:00 - 12:00</item>
