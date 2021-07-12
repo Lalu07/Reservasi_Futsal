@@ -39,6 +39,7 @@ public class Tambah_Data extends AppCompatActivity {
         //ambil referensi database firebase
         database = FirebaseDatabase.getInstance().getReference().child("Futsal");
 
+        //dipakai saat edit data
         final SimpanData simpanData = (SimpanData) getIntent().getSerializableExtra("data");
 
         if (simpanData!=null){
@@ -60,6 +61,7 @@ public class Tambah_Data extends AppCompatActivity {
             });
 
         } else {
+            //proses penyimpanan data
             save.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -127,11 +129,7 @@ public class Tambah_Data extends AppCompatActivity {
         });
     }
 
-//    private void deleteData(String id){
-//        database = FirebaseDatabase.getInstance().getReference("SimpanData").child(id);
-//        Task<Void> mTask = database.removeValue();
-//    }
-
+    //dipakai di dalam adapter
     public static Intent getActIntent(Activity activity){
         //pemgambilan intent
         return new Intent(activity,Tambah_Data.class);

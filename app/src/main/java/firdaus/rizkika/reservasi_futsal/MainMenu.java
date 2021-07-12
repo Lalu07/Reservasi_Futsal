@@ -92,11 +92,7 @@ public class MainMenu extends AppCompatActivity implements LihatData.FirebaseDat
         });
     }
 
-    public Intent getActIntent(Activity activity){
-        return new Intent(activity,MainMenu.class);
-    }
-
-
+    //method ini digunakan di dalam Adapter
     @Override
     public void onDeleteData(SimpanData simpanData, final int position) {
         if (futsalReferance!=null){

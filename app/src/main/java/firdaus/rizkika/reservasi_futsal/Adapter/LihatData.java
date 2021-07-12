@@ -106,7 +106,10 @@ public class LihatData extends RecyclerView.Adapter<LihatData.ViewHolder> {
         }
     }
 
+    //method menghapus data
     public interface FirebaseDataListener{
         void onDeleteData (SimpanData simpanData, int position);
     }
+
+
 }
