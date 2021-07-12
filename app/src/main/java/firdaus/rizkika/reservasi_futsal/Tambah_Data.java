@@ -63,6 +63,7 @@ public class Tambah_Data extends AppCompatActivity {
             save.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    //validasi edit text
                     if (nm.getText().toString().isEmpty() && tgl.getText().toString().isEmpty() && uang.getText().toString().isEmpty()){
                         nm.setError("Nama Harus di isi!");
                         tgl.setError("Tanggalan harus di isi!");
@@ -102,12 +103,14 @@ public class Tambah_Data extends AppCompatActivity {
         String ung = uang.getText().toString();
 
         SimpanData simpanData = new SimpanData(nam,tang,spindata,ung);
+        //masukkan data ke firebase
         database.push().setValue(simpanData).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 nm.setText("");
                 tgl.setText("");
                 uang.setText("");
+                spin.setText("");
                 Toast.makeText(Tambah_Data.this,"Data berhasil Di simpan!",Toast.LENGTH_LONG).show();
             }
         });

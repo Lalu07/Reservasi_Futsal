@@ -57,12 +57,14 @@ public class MainMenu extends AppCompatActivity implements LihatData.FirebaseDat
                 datafutsal = new ArrayList<>();
                 for (DataSnapshot data:snapshot.getChildren()){
                     SimpanData SD = data.getValue(SimpanData.class);
+                    //di ambil idfutsal utk edit dan delete
                     SD.setIdFutsal(data.getKey());
                     //memasukkan obeject SD ke dalam arraylist datafutsal
                     datafutsal.add(SD);
                 }
 
                 adapter = new LihatData(datafutsal,MainMenu.this);
+                //menampilkan data ke dalam Recycler View
                 RC.setAdapter(adapter);
             }
 

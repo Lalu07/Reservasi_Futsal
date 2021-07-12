@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //deklarasi fiirebaseauth
         firebaseAuth = FirebaseAuth.getInstance();
         email = findViewById(R.id.EdEmail);
         pass = findViewById(R.id.EdPass);
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else {
+                    //proses Login
                      firebaseAuth.signInWithEmailAndPassword(email.getText().toString(),pass.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {
@@ -68,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //membuat user tetap berada di dalam MainMenu (jika sudah login)
     @Override
     protected void onStart() {
         super.onStart();
